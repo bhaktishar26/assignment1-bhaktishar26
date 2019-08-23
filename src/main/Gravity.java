@@ -15,7 +15,13 @@ public class Gravity {
 		 *   b. Declare a constant for 'gravity', assume the value to be 9.8
 		 *   c. Calculate the result and print it to the screen.
 		 * */
-
+		 Scanner scanner = new Scanner(System.in);
+		 double g = 9.8;
+		 double time = scanner.nextDouble();
+		 double speed = g*time;
+		 double distance = 0.5*g*time*time;
+		 System.out.println("The speed of the object at "+time+" seconds after its release is "+speed+" and the distance the object has travelled in the "+time+" seconds after the release is "+distance);
+		 scanner.close();
 
 
 	}
